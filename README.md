@@ -39,6 +39,6 @@ git clone https://github.com/powpow-TD/game-experience-designer $env:USERPROFILE
 
 ## Source and license
 
-This repository contains no scans, OCR, long quotations, or figures from the source work. Consult the original book for authoritative wording and complete context.
+Consult the original book for authoritative wording and complete context.
 
 Repository-original material is licensed under [CC BY-NC-SA 4.0](LICENSE). Rights in cited source works remain with their respective rightsholders.
