@@ -27,14 +27,9 @@ It does not pronounce a design correct or incorrect. Its job is to help build, d
 - **Examples**: AI companion specification, combat decision audit, and playtest protocol.
 
 ## Example uses
+①：Use game-experience-designer to turn this enemy concept into an AI behavior specification. Include player-facing role, readable states, fallback behavior, recovery paths, and a greybox test.
+②：Use game-experience-designer to diagnose why our stealth encounter has one dominant strategy. Produce a decision field and the smallest prototype we should run next.
 
-```text
-Use game-experience-designer to turn this enemy concept into an AI behavior specification. Include player-facing role, readable states, fallback behavior, recovery paths, and a greybox test.
-```
-
-```text
-Use game-experience-designer to diagnose why our stealth encounter has one dominant strategy. Produce a decision field and the smallest prototype we should run next.
-```
 
 ## Install
 
