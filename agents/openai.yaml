@@ -1,6 +1,6 @@
 interface:
-  display_name: "Game Experience Designer"
-  short_description: "Turn game experience goals into testable systems"
-  default_prompt: "Use $game-experience-designer to turn this game feature into an experience brief and a minimum validation experiment."
+  display_name: "AI Game Experience Design"
+  short_description: "Design trustworthy AI-driven player experiences"
+  default_prompt: "Use $ai-game-experience-design to turn this AI feature into a player-facing behavior specification and playtest plan."
 policy:
   allow_implicit_invocation: true

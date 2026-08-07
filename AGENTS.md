@@ -1,3 +1,3 @@
-# Game Experience Designer
+# AI Game Experience Design
 
-Use this repository as a practical knowledge base, not a generic review framework. Route feature definition, AI specification, encounter diagnosis, playtest design, and production decisions to the relevant workflow and chapter. Convert every recommendation into a player-visible hypothesis and a minimum validation experiment.
+Use this repository only for AI-driven player experience work. Start from the AI's player-facing role, agency budget, visible cues, authority, failure contract, and minimum validation experiment. Never evaluate an AI feature solely by internal model or algorithm quality.

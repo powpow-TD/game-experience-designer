@@ -1,19 +1,22 @@
-# Workflows
+# AI Game Experience Workflows
 
-## 1. Experience Brief
-Use before implementation. Produce: target player, emotional transition, core verb, player forecast, constraints, and one falsifiable success signal.
+## 1. AI Experience Brief
+Record: target player and situation, intended feeling, player-facing AI role, agency budget, visible cues, limits, failure contract, and a falsifiable success signal.
 
-## 2. AI Behavior Specification
-Use for NPCs, enemies, or companions. Produce: player-facing role, observable states, goals, inputs, decision policy, action limits, fallback, readable cues, and test cases.
+## 2. Enemy AI Specification
+Record: combat fantasy, observable states, target selection, telegraphed commitments, counters, recovery, difficulty variables, and encounter tests.
 
-## 3. Encounter Decision Audit
-Use for combat, stealth, puzzles, or dialogue. List the player's viable options, information, cost, risk, counterplay, and recovery. Remove false choices and untelegraphed failures.
+## 3. Companion AI Specification
+Record: support promise, player-priority rules, space/resource negotiation, commitment cues, yield behavior, fallback, and trust metrics.
 
-## 4. Playtest Protocol
-Write a question, recruit relevant players, create a minimum scene, avoid leading prompts, capture behavior before interpretation, and decide what evidence changes the next build.
+## 4. NPC / LLM Interaction Specification
+Record: persona, memory scope, tool authority, action boundary, refusal/fallback behavior, world consequence model, privacy policy, and player-facing limitations.
 
-## 5. Reward and Motivation Audit
-Map trigger, behavior, reward, expectation, and post-session feeling. Verify that rewards support mastery and meaning rather than masking weak play.
+## 5. Adaptive Difficulty Plan
+Record: adaptation signal, adjustable variables, protected player achievements, disclosure strategy, stop conditions, and fairness test.
 
-## 6. Cross-Functional Decision Card
-Record experience intent, non-negotiable constraints, owners, dependencies, options, evidence, risk, and the next decision date.
+## 6. AI Playtest Protocol
+Record: experience hypothesis, greybox scene, player task, observation sheet, explanation prompts, telemetry events, thresholds, and keep/change/kill rule.
+
+## 7. AI Risk and Trust Review
+Record: misrepresentation, manipulation, bias, privacy, emotional dependency, safety, escalation, and human escalation paths.
