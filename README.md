@@ -2,7 +2,7 @@
 
 > A practical skill for turning player-experience goals into game systems, AI behavior specifications, prototypes, and playtest evidence.
 
-Game Experience Designer is an original operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It is built for game designers, technical designers, AI game designers, and small cross-functional teams who need to move from an appealing intention to observable player behavior and a testable implementation plan.
+Game Experience Designer is an original operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It is built for game designers, technical designers, game AI designers, and small cross-functional teams who need to move from an appealing intention to observable player behavior and a testable implementation plan.
 
 It is not a replacement for the source book. The goal is to make its design thinking usable during real project work.
 
