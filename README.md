@@ -4,7 +4,7 @@
 
 ## What this is
 
-Game Experience Designer is an original, English-language operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It helps a designer move from “this feature should be fun” to explicit player expectations, visible system behavior, meaningful decisions, and a minimum experiment.
+Game Experience Designer is an original, operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It helps a designer move from “this feature should be fun” to explicit player expectations, visible system behavior, meaningful decisions, and a minimum experiment.
 
 It does not pronounce a design correct or incorrect. Its job is to help build, diagnose, and validate game experience through explicit player expectations and evidence.
 
