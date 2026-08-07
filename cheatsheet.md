@@ -1,15 +1,15 @@
-# 体验引擎：决策速查表
+# Experience Review Cheatsheet
 
-| 观察到的现象 | 优先检查 | 首个行动 |
+| If you observe | Start with | First move |
 |---|---|---|
-| 玩家说“我不知道为什么死” | 可读性、预测性、失败恢复 | 补齐 AI 意图三通道；记录其误判点 |
-| 玩家只用一种打法 | 策略退化、信息与成本 | 列出两条可行路线，逐项检查反制 |
-| 玩法与角色设定割裂 | 体验桥梁、能动性 | 对照任务奖励和角色动机 |
-| 试玩反馈分歧很大 | 假设不清或样本不足 | 缩小问题，重做单一假设灰盒 |
-| 团队反复返工 | 依赖堆栈、不可逆决定 | 把未知前提列入设计积压并先验证 |
+| “I died and do not know why” | E05, E15, E22 | Add a readable cause before tuning difficulty. |
+| One tactic dominates | E12, E13, E16 | Inspect information, cost, counterplay, and pick rate. |
+| AI seems smart but frustrating | E37, E38, E39 | Separate internal optimization from player-facing coordination. |
+| A feature has no learning outcome | E27, E29 | Write one falsifiable hypothesis and a minimum scene. |
+| Narrative and play disagree | E03, E10 | Audit verbs, rewards, and consequences together. |
 
-## 三问
+## Three questions
 
-1. 玩家此刻预期会发生什么？
-2. 系统给了哪些足够且不打断的证据？
-3. 下一轮原型怎样可能证明我错了？
+1. What does the player expect now?
+2. What evidence lets them make an intentional choice?
+3. What smallest test could prove this design reading wrong?

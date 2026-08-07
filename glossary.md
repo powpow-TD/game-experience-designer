@@ -1,12 +1,10 @@
-# 术语表
+# Glossary
 
-- **体验引擎**：通过游戏元素与其关系持续塑造玩家情绪变化的整体系统（第1章）。
-- **体验桥梁**：让机制事件与虚构/表现层指向同一情感的连接（第1章）。
-- **弹性挑战**：随掌握度维持有效压力与学习空间的难度设计（第3章）。
-- **能动性**：玩家行动在意义上真正影响进程的感受（第4章）。
-- **策略退化**：单一最佳解挤压其他可行选择的状态（第6章）。
-- **混合策略**：以不可预测性保持策略空间的做法（第7章）。
-- **玩家悔意**：玩家事后感到奖励机制在操纵而非支持体验（第8章）。
-- **异质冗余**：用不同媒介重复传递同一关键线索（第9章）。
-- **灰盒**：以最低制作成本验证空间、节奏和规则体验的原型（第11章）。
-- **依赖堆栈**：从基础能力到上层内容的前置关系（第13章）。
+- **Counter-reading**: A credible alternative interpretation of the same evidence.
+- **Diverse redundancy**: Conveying the same meaning through different channels such as behavior, sound, space, and UI.
+- **Experience promise**: The intended emotional and cognitive change for a player.
+- **Failure contract**: The player-facing rules for how a system can fail, signal failure, and recover.
+- **Greybox**: The least-produced representation that preserves the experience question being tested.
+- **Lens**: A focused diagnostic perspective with a use condition, question, failure pattern, and design move.
+- **Minimum validation**: The smallest test capable of disconfirming an experience hypothesis.
+- **Strategy diversity**: Multiple forecastable paths that remain viable under different conditions.

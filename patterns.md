@@ -1,21 +1,21 @@
-# 设计模式
+# Reusable Patterns
 
-## AI 意图三通道
-**何时使用**：玩家需要在压力下理解敌人或队友下一步。  
-**做法**：用行为/动画、空间/视觉、声音/文本至少三类信号表达同一意图。  
-**代价**：过度提示会降低探索与紧张，须随难度逐步收敛。
+## Intent Surface
+**Use when**: Players cannot tell what an AI actor is trying to do.  
+**How**: Express the same intent through behavior, spatial movement, animation, sound, and only then UI where needed.  
+**Trade-off**: More clarity can reduce ambiguity and visual quiet.
 
-## 假设—原型—观测—决策
-**何时使用**：任何高风险机制或 AI 方案。  
-**做法**：写清体验假设；做最小场景；观察行为与访谈；决定保留、修改或淘汰。  
-**代价**：不能把一次试玩当作结论。
+## Hypothesis-to-Decision Loop
+**Use when**: A prototype needs to produce learning rather than impressions.  
+**How**: State the hypothesis, build a minimum scene, define signals and thresholds, then decide keep/change/kill.  
+**Trade-off**: Narrow tests can feel less like a complete game slice.
 
-## 多策略遭遇
-**何时使用**：战斗或潜入只剩唯一解。  
-**做法**：为至少两种路线配置不同信息、成本与反制，并检查 AI 是否让路线可预测。  
-**代价**：选项增加不等于深度，避免无意义分支。
+## Player-Priority Reservation
+**Use when**: Allies compete with the player's movement, cover, resources, or attention.  
+**How**: Reserve critical player routes, negotiate claims, and expose short-lived commitments.  
+**Trade-off**: Ally local efficiency may fall.
 
-## 依赖倒序验证
-**何时使用**：AI 内容开始堆积但底层能力不稳。  
-**做法**：先验感知、状态、目标、行动执行，再做角色与关卡内容。  
-**代价**：早期可见成果较少，但能显著减少返工。
+## Evidence Ladder
+**Use when**: A team debate mixes facts and opinions.  
+**How**: Label each claim as observation, telemetry, interview, inference, or assumption; seek a counterexample.  
+**Trade-off**: Slower decisions when action is genuinely urgent.

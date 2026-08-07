@@ -1,57 +1,57 @@
 ---
 name: game-experience-designer
-description: "Review game design artifacts through experience-design frameworks. Use for game AI, combat, NPCs, quests, UI, rewards, difficulty, narrative consistency, playtests, GDDs, ADRs, mechanic specs, or prototypes; select 3–5 relevant frameworks and produce evidence-based observations, counter-readings, options with trade-offs, and a minimum validation plan."
+description: "Review game design artifacts through 40 experience-design lenses. Use for GDDs, vision documents, ADRs, mechanic specs, prototypes, game AI, combat, NPCs, quests, UI, rewards, difficulty, narrative consistency, playtests, or player-experience risks. Select 3–5 relevant lenses and produce evidence-based observations, counter-readings, option sets with trade-offs, and a minimum validation plan."
 ---
 
-# 游戏体验设计师 / Game Experience Designer
+# Game Experience Designer
 
-## 评审协议
+## Workflow
 
-1. 识别 artifact 类型、目标玩家、目标体验、已知证据与未知项。
-2. 从 [体验框架库](references/experience-frameworks.zh.md) 选 3–5 个最相关框架；优先覆盖体验、决策/信息与验证。
-3. 每个框架输出：问题、基于 artifact 的观察、一个反向解读、2–3 个方向及代价。
-4. 将结论分为：立即可测、需要原型、需要数据/研究、需要跨职能决定。
-5. 给出最小验证：假设、场景、任务、观察信号、阈值与下一步决定。
+1. Identify the artifact, player, target experience, constraints, evidence, and unknowns.
+2. Read [the lens library](references/experience-lenses.en.md); select three to five lenses that cover the actual risk, not every possible concern.
+3. For each lens, provide the lens question, an evidence-bound observation, a credible counter-reading, and two or three directions with explicit trade-offs.
+4. Separate immediate experiments, prototype work, research/data work, and cross-functional decisions.
+5. End with one minimum validation plan: hypothesis, scene, player task, observable signals, threshold, and keep/change/kill decision.
 
-## 输出格式
+## Output contract
 
 ```markdown
-## 体验摘要
-## 证据与未知项
-## 选中的体验框架
-### Fxx：框架名称
-**问题**：
-**观察**：引用 artifact 的具体段落、行为或数据。
-**另一种解读**：
-**可选方向**：
-- A：…｜收益：…｜代价：…
-- B：…｜收益：…｜代价：…
-## 最小验证计划
-- 假设：
-- 最小场景与玩家任务：
-- 观察信号与阈值：
-- 保留 / 修改 / 淘汰条件：
-## 未选框架与原因
+## Experience Summary
+## Evidence and Unknowns
+## Selected Lenses
+### E##: Lens Name
+**Question**:
+**Observation**: Cite artifact text, behavior, or data. Mark inference as inference.
+**Counter-reading**:
+**Directions**:
+- A. … — Benefit: … — Cost: …
+- B. … — Benefit: … — Cost: …
+## Minimum Validation Plan
+- Hypothesis:
+- Minimal scene and player task:
+- Signals and thresholds:
+- Keep / Change / Kill rule:
+## Skipped Lenses
 ```
 
-## 规则
+## Behavioral rules
 
-- 使用“可能、一个解读是、需要验证”，不要把推测写成事实。
-- 不指定唯一正确方案；呈现取舍，保留设计决策权。
-- 没有证据时明确标记为假设。
-- 不为凑数使用五个框架；简单问题可只用三个。
+- Use calibrated language: “may,” “one reading is,” and “needs validation.”
+- Do not prescribe a single correct design; preserve the designer's decision rights.
+- Prefer evidence to rhetoric. State what is unknown.
+- Use fewer lenses for a narrow artifact. A review with three sharp lenses is better than five generic ones.
 
-## 资源路由
+## Resource routing
 
-- 选择框架：读 [中文框架库](references/experience-frameworks.zh.md)。
-- 有本地 artifact 路径：运行 `python scripts/select_frameworks.py <path>` 获取候选，再人工复核。
-- 需要书籍上下文：按需读 `chapters/`。
-- 需要输出范式：读 [示例](examples/ai-companion-review.zh.md)。
+- Read `references/experience-lenses.en.md` for lens definitions and selection.
+- Run `python scripts/select_lenses.py <artifact-path>` for a keyword-ranked candidate set; review the result before using it.
+- Read `examples/` when the user needs an output model.
+- Read a file in `chapters/` only when book-level context is necessary.
 
-## 项目扩展
+## Custom lenses
 
-可在框架库末尾增加 `PX01` 等项目专属框架，并保留类别、适用时机、关键问题、行动杠杆四个字段。
+Append project lenses as `PX01`, `PX02`, and so on. Preserve Category, Use when, Key question, Failure pattern, Design move, and Selection keywords.
 
-## 边界
+## Limits
 
-本 Skill 是体验设计的思考与验证协议，不替代玩家研究、性能测试、法律/合规审查或最终设计责任。
+This skill is an experience-design review protocol. It does not replace user research, legal review, accessibility testing, performance profiling, or ownership of final design decisions.
