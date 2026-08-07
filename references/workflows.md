@@ -1,22 +1,29 @@
-# AI Game Experience Workflows
+# Working Artifacts
 
-## 1. AI Experience Brief
-Record: target player and situation, intended feeling, player-facing AI role, agency budget, visible cues, limits, failure contract, and a falsifiable success signal.
+## 1. AI experience contract
 
-## 2. Enemy AI Specification
-Record: combat fantasy, observable states, target selection, telegraphed commitments, counters, recovery, difficulty variables, and encounter tests.
+Use at concept stage. Record the player situation, intended feeling, player-facing role, anticipation loop, protected choices, visible commitments, failure contract, technical boundary, and falsifiable success signal.
 
-## 3. Companion AI Specification
-Record: support promise, player-priority rules, space/resource negotiation, commitment cues, yield behavior, fallback, and trust metrics.
+## 2. Behavior-to-experience specification
 
-## 4. NPC / LLM Interaction Specification
-Record: persona, memory scope, tool authority, action boundary, refusal/fallback behavior, world consequence model, privacy policy, and player-facing limitations.
+Use before implementation. For each state transition, record sensing input, belief/state, goal, selection rule, commitment cue, player counter, action limit, fallback, debug view, and acceptance test.
 
-## 5. Adaptive Difficulty Plan
-Record: adaptation signal, adjustable variables, protected player achievements, disclosure strategy, stop conditions, and fairness test.
+## 3. Space and coordination contract
 
-## 6. AI Playtest Protocol
-Record: experience hypothesis, greybox scene, player task, observation sheet, explanation prompts, telemetry events, thresholds, and keep/change/kill rule.
+Use for companions, squads, crowds, and tactical enemies. Reserve player routes, cover, interaction targets, camera space, and timing before optimizing the agent. Define conflict resolution, yielding, and escalation.
 
-## 7. AI Risk and Trust Review
-Record: misrepresentation, manipulation, bias, privacy, emotional dependency, safety, escalation, and human escalation paths.
+## 4. Adaptive director contract
+
+Use for pacing or difficulty. Record observation signal, allowed control knobs, protected achievements, maximum change rate, disclosure choice, stop conditions, fairness test, and rollback.
+
+## 5. AI operability plan
+
+Use before scaling content. Record deterministic seed/replay, state and goal visualizations, assertion suite, performance budget, simulation/autoplay scope, telemetry events, and on-call ownership.
+
+## 6. Player-model playtest
+
+Use in a greybox slice. Ask players to predict the next AI action before it happens, explain why it happened afterwards, and choose a counter. Compare explanation accuracy with traces; change the cue, rule, or scope before changing difficulty numbers.
+
+## 7. Trust and authority review
+
+Use for LLMs, personalization, social agents, or strong automation. Review disclosure, consent, privacy, bias, manipulation, emotional dependency, escalation, data retention, and executable world authority.

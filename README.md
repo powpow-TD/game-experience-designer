@@ -1,202 +1,119 @@
 # AI Game Experience Design
 
-> A practical skill for designing AI-driven game experiences that players can understand, influence, trust, and enjoy.
+> Design AI that players can read, influence, trust, and learn from.
 
-## Purpose
+`AI Game Experience Design` is a Codex skill for turning game-AI ideas into player-facing behavior specifications, implementation boundaries, operable prototypes, and evidence-based decisions.
 
-This repository focuses exclusively on the player experience of game AI: enemies, bosses, companions, systemic NPCs, LLM characters, adaptive difficulty, procedural agents, and AI-driven feedback.
+It is for enemies and bosses, companions and squads, systemic NPCs, LLM characters, adaptive directors, navigation/crowds, AI tooling, and AI playtests.
 
-It treats every AI feature as an **experience contract**. The central questions are: what role does the AI play for the player; what can the player observe, predict, influence, and recover from; what does the AI promise; and how does it behave at its limits?
+## Why it exists
 
-The repository is an original operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It is for game designers, technical designers, game-AI designers, and cross-functional teams who need to turn an AI idea into observable player behavior and a testable implementation plan.
+Most AI documents begin with implementation:
 
----
+- "Use a behavior tree for the companion."
+- "Make the enemy flank more intelligently."
+- "Let the NPC remember conversations."
+- "Use an AI director to retain struggling players."
 
-## Why this exists
+Those are not yet design decisions. They omit what the player should anticipate, what choice remains theirs, how the AI communicates commitment, how it fails, and what would prove the feature works.
 
-Teams often describe AI through implementation:
-
-- “The companion should choose the best cover.”
-- “The enemy should flank more intelligently.”
-- “The NPC should remember previous conversations.”
-- “The director should keep the player challenged.”
-
-Those statements omit the design question that matters: what should the player predict, feel, understand, decide, and learn?
-
-An internally capable system can still create a poor experience. A companion can optimize cover while trapping the player. A difficult enemy can be numerically fair but unreadable. An LLM NPC can sound convincing while promising world actions the game cannot perform. An adaptive system can remove frustration while also invalidating a player's sense of earned success.
-
-This skill turns implementation discussion into an AI experience-engineering loop:
+This skill starts with an **experience contract** and carries it through the full chain:
 
 ```text
-Player and situation
-        ↓
-Player-facing AI role and intended feeling
-        ↓
-Visible cues, agency budget, authority, and limits
-        ↓
-Choices, risks, recovery, and trust boundaries
-        ↓
-Minimum prototype or playtest
-        ↓
-Behavior + explanation + telemetry → decision → next iteration
+Player situation and feeling
+  -> player-facing AI role
+  -> cue -> forecast -> player choice -> resolution -> learning
+  -> perception -> belief -> goal -> commitment -> action
+  -> debug/replay + player model + telemetry
+  -> keep / change / kill decision
 ```
 
----
+## What it produces
 
-## What this skill produces
-
-| Situation | Practical artifact |
+| Need | Artifact |
 |---|---|
-| An AI idea is vague | AI Experience Brief: player, feeling, role, agency, limits, risks |
-| An enemy or boss needs definition | Enemy AI Specification: readable states, commitments, counters, recovery, tests |
-| A companion frustrates players | Companion Specification: player-priority rules, coordination cues, fallback, trust metrics |
-| An NPC uses LLM dialogue | NPC / LLM Interaction Specification: memory, tools, authority, refusal, consequence, privacy |
-| Difficulty feels rigged | Adaptive Difficulty Plan: adjustment signals, protected achievements, fairness tests |
-| A team needs evidence | AI Playtest Protocol: hypothesis, greybox scene, explanation prompts, telemetry, thresholds |
-| A risk crosses disciplines | AI Trust Review: misrepresentation, manipulation, bias, privacy, dependency, escalation |
+| Vague AI feature | AI Experience Contract |
+| Enemy or boss | Behavior-to-experience specification and encounter test |
+| Companion or squad | Player-first space and coordination contract |
+| NPC / LLM character | Knowledge, authority, consequence, and safety boundary |
+| Adaptive director | Bounded fairness and pacing contract |
+| Systemic world | Visible causal-world promise and fidelity envelope |
+| Architecture decision | Experience-first AI ADR and observability plan |
+| Playtest / telemetry | Player-model protocol and keep/change/kill rule |
 
----
+## The quality bar
 
-## Core AI experience principles
+Every consequential AI behavior must satisfy three requirements.
 
-### 1. Player-facing role before algorithm choice
+| Requirement | Player question |
+|---|---|
+| **Legibility** | "What is it doing, and why?" |
+| **Leverage** | "What can I meaningfully do about it?" |
+| **Reliability** | "Will the rule hold when it matters?" |
 
-Define whether an AI creates pressure, support, discovery, rivalry, companionship, world credibility, or practice. “Uses a planner” is implementation, not player value.
+An internally sophisticated agent can still fail any one of them. The skill treats those failures as design and production problems, not as tuning afterthoughts.
 
-### 2. Legibility before cleverness
+## Core workflows
 
-Players cannot value decisions they cannot perceive. Make consequential goals, commitments, limits, and recovery visible through behavior, space, animation, sound, and restrained UI.
+1. Write the player situation, intended feeling, and player-facing role.
+2. Define the anticipation loop: cue -> forecast -> choice -> resolution -> learning.
+3. Protect the player decisions that carry the fantasy.
+4. Assign one accountable owner to each AI decision boundary.
+5. Select the smallest architecture that is readable, inspectable, and reversible.
+6. Build a minimum meaningful scene with replay and debug views.
+7. Decide from trace, observation, player explanation, and telemetry separately.
 
-### 3. Agency budget before automation
+## Playbooks
 
-Every AI intervention spends player agency. Remove friction without automating the decisions that make the experience meaningful. Protect player routes, resources, timing, and authorship.
+| Playbook | Use for |
+|---|---|
+| [Enemy and Boss](playbooks/enemy-and-boss.md) | telegraphs, counterplay, tactical space, difficulty scaling |
+| [Companion and Squad](playbooks/companion-and-squad.md) | player priority, reservations, coordination, bots |
+| [NPC and LLM](playbooks/npc-and-llm.md) | social simulation, memory, tools, claims, consequences, safety |
+| [Adaptive Director](playbooks/adaptive-director.md) | difficulty, pacing, procedural pressure, fairness |
+| [Systemic World](playbooks/systemic-world.md) | crowds, navigation, ambient life, LOD, player-modified worlds |
+| [Implementation Choice](playbooks/ai-implementation-choice.md) | FSM, behavior tree, utility, planner, hybrid architecture |
 
-### 4. Failure contract before scale
+## Reference library
 
-Specify how an AI can fail, how a player notices, what fallback occurs, and what recovery remains. This is crucial for companions, procedural agents, and LLM characters.
-
-### 5. Honest adaptation before retention optimization
-
-Adapt pressure, information, pacing, or support while preserving the meaning of earned outcomes. Do not silently rewrite a result the player believes they achieved.
-
-### 6. Executable authority before conversational promise
-
-NPC memory, dialogue, promises, and world actions must stay within real system authority. A graceful limitation protects trust better than a fabricated consequence.
-
-### 7. Evidence before certainty
-
-Use telemetry for behavior, observation for moment-to-moment friction, player explanation for mental models, and interviews for meaning. No one source proves experience quality.
-
----
-
-## The AI knowledge map
-
-The 17 chapter guides convert the source's practical domains into AI-specific application guidance.
-
-| # | Domain | Use it when | Typical question |
-|---|---|---|---|
-| 1 | AI Experience Intent | Defining an AI feature | What feeling and future should this AI create? |
-| 2 | Legible AI Simplicity | Rules become opaque | Can players learn why the AI acts? |
-| 3 | Adaptive Challenge | Difficulty feedback conflicts | Which player skill layer actually failed? |
-| 4 | NPC Agency and Story | NPC behavior affects fiction | Can dialogue, memory, and action make the same promise? |
-| 5 | Human-AI Decisions | AI removes or creates choices | What can the player predict, risk, and influence? |
-| 6 | AI Strategy and Balance | AI counters dominate | Are alternatives readable and viable? |
-| 7 | Social AI and Bots | Groups and competition matter | Does local optimization damage the match? |
-| 8 | Motivation and Personalization | AI adjusts rewards or support | Does adaptation reinforce mastery and autonomy? |
-| 9 | AI Cues and Interface | Intent is missed | What signal survives partial attention? |
-| 10 | AI Product Promise | Feature positioning is vague | Can the player experience the promised capability? |
-| 11 | AI Prototyping and Iteration | A team must learn quickly | What single AI experience claim should the next build test? |
-| 12 | AI Evidence and Telemetry | Debate is intuition-only | What evidence would change our mind? |
-| 13 | AI Dependency Stack | Rework spreads through a system | Which lower-layer capability is unproven? |
-| 14 | AI Ownership and Explainability | Responsibility is unclear | Who owns the player outcome and how is behavior inspected? |
-| 15 | AI Team Learning | Momentum falls | Can makers see playable, validated progress? |
-| 16 | AI Architecture Decisions | A costly commitment approaches | How reversible is the decision and what experience does it enable? |
-| 17 | AI Values and Trust | Trust risks appear | What does the AI know, do, hide, and fail at? |
-
----
-
-## Seven end-to-end workflows
-
-Detailed templates live in [workflows.md](references/workflows.md). Use them as working artifacts, not paperwork.
-
-1. **AI Experience Brief** — define target player, feeling, role, agency budget, cues, limits, risks, and success signal.
-2. **Enemy AI Specification** — define combat fantasy, states, target selection, commitments, counters, recovery, and difficulty variables.
-3. **Companion AI Specification** — define support promise, player-priority rules, space negotiation, yield behavior, fallback, and trust metrics.
-4. **NPC / LLM Interaction Specification** — define persona, memory scope, tool authority, action boundary, refusal, consequence model, and privacy limits.
-5. **Adaptive Difficulty Plan** — define signals, adjustable variables, protected achievements, disclosure, stop conditions, and fairness tests.
-6. **AI Playtest Protocol** — define one experience hypothesis, greybox scene, player task, explanation prompts, telemetry, thresholds, and decision rule.
-7. **AI Risk and Trust Review** — define risks around deception, manipulation, bias, privacy, emotional dependency, safety, and escalation.
-
----
+- [Experience Engineering](references/experience-engineering.md): design AI around player forecasts and meaningful choice.
+- [AI Experience Principles](references/ai-experience-principles.md): legibility, leverage, reliability, authority, and trust.
+- [Game AI Patterns](references/game-ai-pro-patterns.md): durable decision, perception, spatial, scale, and tooling vocabulary.
+- [Operability and Validation](references/operability-and-validation.md): replay, assertions, simulation, telemetry, and player-model tests.
+- [Scope and Modernization](references/scope-and-modernization.md): what to retain, treat as historical, or exclude.
+- [Source Coverage](references/source-coverage.md): source families and copyright boundary.
 
 ## Examples
 
-- [AI Companion Specification](examples/ai-companion-spec.md): preserve player initiative while coordinating cover.
-- [LLM NPC Boundary](examples/llm-npc-boundary.md): align memory, promises, and world authority.
-- [Adaptive Difficulty Plan](examples/adaptive-difficulty-plan.md): adapt without invalidating earned success.
-- [AI Playtest Protocol](examples/playtest-protocol.md): test whether an enemy charge is readable before changing numbers.
+- [AI Experience Contract](examples/ai-experience-contract.md)
+- [Companion Specification](examples/ai-companion-spec.md)
+- [Combat Decision Audit](examples/combat-decision-audit.md)
+- [Adaptive Difficulty Plan](examples/adaptive-difficulty-plan.md)
+- [LLM NPC Boundary](examples/llm-npc-boundary.md)
+- [AI Playtest Protocol](examples/playtest-protocol.md)
 
-### A short example
-
-Instead of writing:
-
-> The companion should choose the highest-scoring cover position.
-
-Write:
-
-> The companion should make the player feel supported under pressure without taking tactical initiative away. Before claiming cover, it must make the movement readable; when a conflict occurs, the player's current and nearest escape routes have priority. Test this in a two-cover greybox encounter and measure route conflicts, player explanations, and death attribution.
-
-The second version is implementable, reviewable, and testable without confusing an optimization rule with the experience itself.
-
----
-
-## Repository structure
-
-```text
-ai-game-experience-design/
-├── SKILL.md                         # Agent workflow and output templates
-├── chapters/                        # 17 AI-focused chapter guides
-├── references/
-│   ├── ai-experience-principles.md  # Core AI experience reasoning
-│   └── workflows.md                 # Seven reusable project artifacts
-├── examples/                        # Applied AI design examples
-├── glossary.md                      # AI experience vocabulary
-├── patterns.md                      # Reusable design patterns
-├── cheatsheet.md                    # Fast AI diagnosis map
-├── AGENTS.md                        # Generic agent integration guidance
-└── agents/openai.yaml               # Codex UI metadata
-```
-
----
-
-## Installation and use
+## Install
 
 ```powershell
 git clone https://github.com/powpow-TD/ai-game-experience-design $env:USERPROFILE\.codex\skills\ai-game-experience-design
 ```
 
-Example prompts:
+## Use
 
 ```text
-Use ai-game-experience-design to write a companion AI specification for a tactical shooter. Protect player agency, describe readable commitments and fallback behavior, then propose a greybox playtest.
+Use ai-game-experience-design to specify a companion AI for a tactical shooter.
+Protect player routes and initiative, make commitments readable, define yield and recovery behavior,
+choose an inspectable architecture, and propose a greybox player-model test.
 ```
 
 ```text
-Use ai-game-experience-design to define the authority boundary for an LLM quest-giver. Include memory scope, executable actions, refusals, world consequences, privacy limits, and trust tests.
+Use ai-game-experience-design to design an LLM quest giver.
+Define its knowledge/memory/tool authority, visible world consequences, refusal behavior, privacy and safety limits,
+then give acceptance tests that distinguish fluent dialogue from trustworthy gameplay.
 ```
 
----
+## Sources and license
 
-## Extending for a project
+This repository is an original, implementation-oriented synthesis informed by the *Game AI Pro* collections (Steve Rabin, series editor) and Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences* (Chinese edition: *体验引擎*). It contains no source scans, OCR, long quotations, figures, tables, or source code. See [Source Coverage](references/source-coverage.md).
 
-Keep project-specific information outside the core book-derived material. Useful additions include an AI-state vocabulary, animation and telemetry naming, target-player principles, online-safety constraints, platform requirements, and documented lessons from playtests. Link every new rule to player evidence or an explicit assumption.
-
-## Contribution guidance
-
-Useful contributions improve AI experience clarity without reproducing source material: new fictional examples, clearer workflow fields, trade-off-aware game-AI patterns, and integration notes. Do not submit scans, OCR, long quotations, figures, or copyrighted source material.
-
-## Source and license
-
-The practical foundations were inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*, extended here for AI game experience design. This repository contains no scans, OCR, long quotations, or figures from the source work.
-
-Repository-original material is licensed under [CC BY-NC-SA 4.0](LICENSE). Rights in cited source works remain with their respective rightsholders.
+Repository-original material is licensed under [CC BY-NC-SA 4.0](LICENSE). Rights in cited works remain with their respective rightsholders.

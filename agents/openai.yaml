@@ -1,6 +1,4 @@
 interface:
   display_name: "AI Game Experience Design"
-  short_description: "Design trustworthy AI-driven player experiences"
-  default_prompt: "Use $ai-game-experience-design to turn this AI feature into a player-facing behavior specification and playtest plan."
-policy:
-  allow_implicit_invocation: true
+  short_description: "Turn game AI into readable, testable player experience"
+  default_prompt: "Use $ai-game-experience-design to turn this AI feature into an experience contract, an inspectable behavior specification, and a player-model playtest."

@@ -1,25 +1,44 @@
-# AI Game Experience Principles
+# AI Experience Principles
 
-## Player-Facing Role
-Define an AI actor by what it contributes to the player's experience: pressure, support, discovery, rivalry, companionship, world credibility, or practice. “Uses a behavior tree” is not a role.
+## Anticipated futures are part of the experience
 
-## Legibility Before Optimization
-An internally optimal action that players cannot predict or explain creates distrust. Make goal, commitment, limitation, and consequence visible through behavior and restrained feedback.
+Players continuously forecast what an AI might do. Design the forecast deliberately: expose a cue, define the possible consequence, give the player a response, resolve it, then let the result update their model. Surprise is valuable only when the player can retrospectively learn a rule rather than conclude that the system is arbitrary.
 
-## Agency Budget
-Every AI intervention spends player agency. Automation should remove friction without taking away the decisions the experience depends on. Reserve critical routes, resources, and authorship for the player.
+## Legibility, leverage, and reliability form one quality bar
 
-## Failure Contract
-State how an AI can fail, how a player notices, what fallback occurs, and what recovery remains. This is essential for companions, procedural agents, and LLM NPCs.
+- **Legibility**: the player can form a useful explanation of consequential behavior.
+- **Leverage**: the player has meaningful influence, counterplay, or authorship around that behavior.
+- **Reliability**: the system respects its visible rules often enough for learning and trust.
 
-## Adaptive Difficulty Contract
-Adapt observable pressure, information, pacing, or support while preserving the meaning of success. Never silently rewrite a result the player believes they earned.
+Optimize all three. An impressive but opaque agent fails legibility; a helpful companion that takes over fails leverage; a readable agent with flaky execution fails reliability.
 
-## LLM Authority Boundary
-Keep NPC memory, dialogue, promises, and actions within executable system authority. When a request exceeds that boundary, acknowledge and redirect without fabricating world impact.
+## Design the commitment, not only the action
 
-## Evidence Triangulation
-Use telemetry for behavior, observation for moment-to-moment friction, player explanation for mental models, and interviews for meaning. No single source proves experience quality.
+An action is usually too late to communicate. Give consequential actions a commitment phase: wind-up, target lock, movement route, spoken intent, spatial reservation, or UI mark. Then define cancellation, interruption, and recovery. This converts internal decision state into a player decision.
 
-## Trust Review
-Review manipulation, deception, privacy, bias, safety, consent, and unwanted emotional dependence before shipping an AI interaction.
+## Agency is budgeted, not binary
+
+Every intervention removes or reframes some choice. List protected choices before adding assistance: player path, target, timing, resource, strategy, authorship, and social consent. Automate only friction that does not carry the intended learning, drama, or expression.
+
+## Preserve an honest competence model
+
+Difficulty and personalization may adjust pressure, information, pacing, or support. They must not quietly change the meaning of a result the player believes they earned. Keep protected achievements, use bounded adjustments, and run fairness tests with informed and uninformed players.
+
+## Separate conversational fluency from world authority
+
+For LLM characters, specify memory scope, tools, allowed facts, action authority, refusal behavior, and persistence. Dialogue cannot promise an object, quest consequence, relationship change, or safety guarantee that the simulation cannot execute.
+
+## Treat AI failure as a designed interaction
+
+For every consequential failure, define detection, player-facing explanation, fallback, compensation if appropriate, and recovery. A hidden fallback can be useful for robustness but cannot conceal a result-changing intervention.
+
+## Evidence has four distinct jobs
+
+| Evidence | Answers |
+|---|---|
+| Behavior trace / replay | What did the system do? |
+| Observation | Where did attention, hesitation, or frustration occur? |
+| Player explanation | What rule did the player infer? |
+| Telemetry / experiment | How often and for whom does the pattern recur? |
+
+Do not collapse these into a single "fun score."
