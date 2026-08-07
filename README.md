@@ -15,7 +15,7 @@
 ## Install
 
 ```powershell
-git clone https://github.com/3168235049-cloud/game-experience-designer $env:USERPROFILE\.codex\skills\game-experience-designer
+git clone https://github.com/powpow-TD/game-experience-designer $env:USERPROFILE\.codex\skills\game-experience-designer
 ```
 
 然后说：`使用 game-experience-designer 评审这个 AI/机制方案，重点检查玩家预期、信息证据、可行策略与最小试玩验证。`
