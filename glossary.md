@@ -1,10 +1,8 @@
 # Glossary
 
-- **Counter-reading**: A credible alternative interpretation of the same evidence.
-- **Diverse redundancy**: Conveying the same meaning through different channels such as behavior, sound, space, and UI.
-- **Experience promise**: The intended emotional and cognitive change for a player.
-- **Failure contract**: The player-facing rules for how a system can fail, signal failure, and recover.
-- **Greybox**: The least-produced representation that preserves the experience question being tested.
-- **Lens**: A focused diagnostic perspective with a use condition, question, failure pattern, and design move.
-- **Minimum validation**: The smallest test capable of disconfirming an experience hypothesis.
-- **Strategy diversity**: Multiple forecastable paths that remain viable under different conditions.
+- **Emotional forecast**: The future a player expects and feels before it happens.
+- **Experience bridge**: Alignment among mechanics, fiction, and presentation.
+- **Greybox**: The least-produced prototype that preserves a testable experience question.
+- **Player-facing role**: What an AI actor means to a player, beyond its internal algorithm.
+- **Readable cue**: A perceivable signal that lets the player predict a consequential behavior.
+- **Recovery path**: A way to understand and re-enter play after failure.

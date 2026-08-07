@@ -1,46 +1,40 @@
 # Game Experience Designer
 
-> A 40-lens, evidence-first review protocol for game AI, mechanics, UI, narrative, rewards, difficulty, and playtests.
+> A practical knowledge skill for turning player-experience goals into game systems, AI behavior specifications, prototypes, and playtest evidence.
 
-## Why this exists
+## What this is
 
-Most design reviews collapse trade-offs into a confident list of fixes. That is particularly harmful in game AI: “smarter,” “more realistic,” and “more content” are not player experiences. This skill keeps the designer in charge. It selects a small set of relevant experience lenses, surfaces competing readings, and turns the result into a minimal test.
+Game Experience Designer is an original, English-language operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It helps a designer move from “this feature should be fun” to explicit player expectations, visible system behavior, meaningful decisions, and a minimum experiment.
 
-## What it produces
+It does not pronounce a design correct or incorrect. Its job is to help build, diagnose, and validate game experience through explicit player expectations and evidence.
 
-For every selected lens, the review provides:
+## What it helps you do
 
-1. A specific question
-2. An observation tied to the artifact, behavior, or data
-3. A credible counter-reading
-4. Two or three directions, each with an explicit benefit and cost
+| Task | Output |
+|---|---|
+| Define a feature | Experience brief: player, emotional transition, verbs, constraints, risks |
+| Specify game AI | Player-facing role, readable states, goals, limits, fallback, tests |
+| Diagnose an encounter | Decision field, information, counterplay, recovery paths |
+| Tune challenge | Failure-layer diagnosis: perception, reaction, planning, execution, coordination |
+| Plan a playtest | Question, greybox scene, task, observation signals, decision rule |
+| Make a production decision | Dependencies, reversibility, evidence, ownership |
 
-It ends with a minimum validation plan: hypothesis, scene, player task, signals, thresholds, and a keep/change/kill rule. See the [full AI companion example](examples/ai-companion-cover-review.md).
+## Knowledge structure
 
-## The 40 lenses
+- **17 chapters**: the book's major practical domains, rewritten as actionable English guidance.
+- **Core models**: compact tools such as Emotional Forecast, Decision Field, Readability Stack, Hypothesis Loop, and Dependency Stack.
+- **Workflows**: reusable artifacts for an experience brief, AI specification, encounter audit, playtest protocol, reward audit, and decision card.
+- **Examples**: AI companion specification, combat decision audit, and playtest protocol.
 
-The library is organized into seven practical groups:
+## Example uses
 
-| Group | Lenses | Typical use |
-|---|---|---|
-| Experience | E01–E03 | Emotional promise, expectation, theme-mechanics alignment |
-| Systems & skill | E04–E08 | Emergence, readability, difficulty, recovery, mastery |
-| Narrative & decision | E09–E16 | Agency, character consistency, choice, information, fairness, balance |
-| Multiplayer & motivation | E17–E20 | Cooperation, mind games, rewards, remorse |
-| Interface & market | E21–E26 | Signals, redundant cues, guidance, input, positioning |
-| Process & culture | E27–E36 | Prototypes, evidence, dependencies, ownership, learning |
-| Game AI | E37–E40 | Intent surfaces, failure contracts, companion coordination, LLM boundaries |
+```text
+Use game-experience-designer to turn this enemy concept into an AI behavior specification. Include player-facing role, readable states, fallback behavior, recovery paths, and a greybox test.
+```
 
-Read the full [lens library](references/experience-lenses.en.md).
-
-## How it works
-
-1. Identify the artifact's player, experience goal, evidence, and uncertainty.
-2. Select only 3–5 relevant lenses.
-3. Produce trade-off-aware directions rather than a single prescription.
-4. Design the smallest test that could disconfirm the leading assumption.
-
-The included `scripts/select_lenses.py` ranks candidate lenses from a local artifact. It is a routing aid, not a replacement for judgment.
+```text
+Use game-experience-designer to diagnose why our stealth encounter has one dominant strategy. Produce a decision field and the smallest prototype we should run next.
+```
 
 ## Install
 
@@ -48,18 +42,8 @@ The included `scripts/select_lenses.py` ranks candidate lenses from a local arti
 git clone https://github.com/powpow-TD/game-experience-designer $env:USERPROFILE\.codex\skills\game-experience-designer
 ```
 
-Then ask Codex:
-
-```text
-Use game-experience-designer to review this AI or mechanic proposal. Focus on player expectation, decision quality, readable evidence, and a minimum playtest.
-```
-
-## Extend
-
-Add project-specific lenses as `PX01`, `PX02`, and so on. Keep the same six fields used by the library: Category, Use when, Key question, Failure pattern, Design move, and Selection keywords. This works well for LLM input, live-service constraints, platform policy, or project-specific experience principles.
-
 ## Source and license
 
-This repository is an original operational synthesis inspired by Tynan Sylvester's *Designing Games: A Guide to Engineering Experiences*. It contains no scans, OCR, long excerpts, or figures. Consult the original work for authoritative wording and full context.
+This repository contains no scans, OCR, long quotations, or figures from the source work. Consult the original book for authoritative wording and complete context.
 
 Repository-original material is licensed under [CC BY-NC-SA 4.0](LICENSE). Rights in cited source works remain with their respective rightsholders.

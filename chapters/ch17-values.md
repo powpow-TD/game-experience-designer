@@ -1,10 +1,23 @@
 # Chapter 17: Values
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E33, E34, E35
+Openness, candor, humility, and curiosity determine whether a team can learn from reality.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+In reviews, separate observation, interpretation, and decision; invite counterevidence.
+
+## Game-AI application
+
+Use ethical review for AI promises, bias, manipulation, privacy, and harm paths.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

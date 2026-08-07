@@ -1,57 +1,57 @@
 ---
 name: game-experience-designer
-description: "Review game design artifacts through 40 experience-design lenses. Use for GDDs, vision documents, ADRs, mechanic specs, prototypes, game AI, combat, NPCs, quests, UI, rewards, difficulty, narrative consistency, playtests, or player-experience risks. Select 3–5 relevant lenses and produce evidence-based observations, counter-readings, option sets with trade-offs, and a minimum validation plan."
+description: "Apply the practical design thinking of Game Experience Designer to game AI, mechanics, NPCs, quests, UI, rewards, difficulty, narrative consistency, planning, prototypes, and playtests. Use when turning an experience goal into system constraints, diagnosing why a player experience fails, writing an AI behavior specification, or designing a minimum validation experiment."
 ---
 
 # Game Experience Designer
 
-## Workflow
+Use this skill as a practical knowledge base for engineering player experience. It turns experience goals into system constraints, player-visible behavior, and validation work.
 
-1. Identify the artifact, player, target experience, constraints, evidence, and unknowns.
-2. Read [the lens library](references/experience-lenses.en.md); select three to five lenses that cover the actual risk, not every possible concern.
-3. For each lens, provide the lens question, an evidence-bound observation, a credible counter-reading, and two or three directions with explicit trade-offs.
-4. Separate immediate experiments, prototype work, research/data work, and cross-functional decisions.
-5. End with one minimum validation plan: hypothesis, scene, player task, observable signals, threshold, and keep/change/kill decision.
+## Choose a workflow
 
-## Output contract
+- **Define a feature**: read `references/workflows.md` → *Experience Brief*.
+- **Specify game AI**: read *AI Behavior Specification* plus Chapters 3, 5, 9, and 13 as needed.
+- **Diagnose an encounter**: read `references/core-models.md` → *Decision Field*, *Readability Stack*, and *Challenge Decomposition*.
+- **Plan validation**: read *Hypothesis Loop* and `references/workflows.md` → *Playtest Protocol*.
+- **Make a production decision**: read *Dependency Stack*, *Decision Portfolio*, and Chapter 16.
 
+## Working method
+
+1. State the target player and intended emotional transition.
+2. Translate it into player-visible system behavior, choices, feedback, and constraints.
+3. Identify the riskiest unproven assumption.
+4. Build the smallest prototype that can test that assumption.
+5. Record observation, interpretation, decision, and the next experiment separately.
+
+## Output templates
+
+### Experience brief
 ```markdown
-## Experience Summary
-## Evidence and Unknowns
-## Selected Lenses
-### E##: Lens Name
-**Question**:
-**Observation**: Cite artifact text, behavior, or data. Mark inference as inference.
-**Counter-reading**:
-**Directions**:
-- A. … — Benefit: … — Cost: …
-- B. … — Benefit: … — Cost: …
-## Minimum Validation Plan
-- Hypothesis:
-- Minimal scene and player task:
-- Signals and thresholds:
-- Keep / Change / Kill rule:
-## Skipped Lenses
+## Target player and situation
+## Intended emotional transition
+## Core player verb and forecast
+## System constraints and player-visible evidence
+## Risks and unknowns
+## Minimum validation experiment
 ```
 
-## Behavioral rules
-
-- Use calibrated language: “may,” “one reading is,” and “needs validation.”
-- Do not prescribe a single correct design; preserve the designer's decision rights.
-- Prefer evidence to rhetoric. State what is unknown.
-- Use fewer lenses for a narrow artifact. A review with three sharp lenses is better than five generic ones.
+### AI behavior specification
+```markdown
+## Player-facing role
+## Observable states and readable cues
+## Goals, inputs, and decision policy
+## Actions, limits, and fallback
+## Player choices and recovery paths
+## Test cases and telemetry
+```
 
 ## Resource routing
 
-- Read `references/experience-lenses.en.md` for lens definitions and selection.
-- Run `python scripts/select_lenses.py <artifact-path>` for a keyword-ranked candidate set; review the result before using it.
-- Read `examples/` when the user needs an output model.
-- Read a file in `chapters/` only when book-level context is necessary.
-
-## Custom lenses
-
-Append project lenses as `PX01`, `PX02`, and so on. Preserve Category, Use when, Key question, Failure pattern, Design move, and Selection keywords.
+- Read `references/core-models.md` for compact reasoning tools.
+- Read `references/workflows.md` for repeatable planning artifacts.
+- Read `chapters/` only for a topic's deeper context.
+- Read `examples/` for concrete application patterns.
 
 ## Limits
 
-This skill is an experience-design review protocol. It does not replace user research, legal review, accessibility testing, performance profiling, or ownership of final design decisions.
+Do not treat this skill as a substitute for player research, accessibility work, performance testing, legal review, or final design ownership. Treat its claims as structured hypotheses to validate.

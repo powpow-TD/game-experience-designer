@@ -1,10 +1,23 @@
 # Chapter 6: Balance
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E11, E12, E13
+Balance preserves several understandable strategies; it is not numerical symmetry.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+Track strategy adoption, counterplay, cost, and player explanation in addition to win rate.
+
+## Game-AI application
+
+Check whether AI countermeasures erase a playstyle or merely create a readable response.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

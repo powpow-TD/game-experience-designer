@@ -1,16 +1,16 @@
-# Chapter 2: Elegance
+# Chapter 11: Planning and Iteration
 
 ## Core idea
 
-Elegant design creates rich outcomes from a compact, legible rule set.
+Planning reduces expensive uncertainty; iteration turns assumptions into observable evidence.
 
 ## Practical method
 
-Remove one-off exceptions; test whether players can explain outcomes from a few rules.
+Write one risky hypothesis, a minimum scene, player task, signal, and decision rule.
 
 ## Game-AI application
 
-Prefer shared AI state and composable rules over bespoke behavior branches.
+Prototype AI readability and controllability before content volume or polish.
 
 ## Review prompts
 

@@ -1,10 +1,23 @@
 # Chapter 1: Experience Engine
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E01, E02, E03
+Treat a game as a system that changes a player's emotional forecast. Mechanics, fiction, and presentation are means, not the end.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+Write the desired emotional transition; map player prediction, event, feedback, and revised prediction.
+
+## Game-AI application
+
+AI behavior needs a visible player-facing purpose, not only an internally optimal action.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

@@ -1,10 +1,23 @@
 # Chapter 5: Decisions
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E09, E10, E11
+Depth comes from a player's internal simulation of meaningful trade-offs, not from the number of buttons.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+Identify two forecastable, viable paths with distinct cost and information.
+
+## Game-AI application
+
+Expose enough AI intent and consequence for players to plan rather than guess.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

@@ -1,3 +1,3 @@
 # Game Experience Designer
 
-Use `SKILL.md` and select three to five lenses from `references/experience-lenses.en.md` for reviews. Always produce evidence-bound observations, a counter-reading, directions with trade-offs, and a minimum validation plan.
+Use this repository as a practical knowledge base, not a generic review framework. Route feature definition, AI specification, encounter diagnosis, playtest design, and production decisions to the relevant workflow and chapter. Convert every recommendation into a player-visible hypothesis and a minimum validation experiment.

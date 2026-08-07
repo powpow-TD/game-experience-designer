@@ -1,10 +1,23 @@
 # Chapter 16: Complex Decisions
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E31, E32, E33
+Important choices should be ordered by impact, reversibility, and evidence strength.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+Prototype high-impact, hard-to-reverse assumptions first and trace second-order effects.
+
+## Game-AI application
+
+Do not commit to an AI architecture before testing the player experience it enables.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

@@ -1,16 +1,16 @@
-# Chapter 2: Elegance
+# Chapter 8: Motivation and Implementation
 
 ## Core idea
 
-Elegant design creates rich outcomes from a compact, legible rule set.
+Reward changes expectation and behavior; external rewards can weaken an intrinsically satisfying loop.
 
 ## Practical method
 
-Remove one-off exceptions; test whether players can explain outcomes from a few rules.
+Draw the reward timeline and ask what capability, autonomy, or meaning it reinforces.
 
 ## Game-AI application
 
-Prefer shared AI state and composable rules over bespoke behavior branches.
+Avoid using AI novelty or variable rewards as a substitute for a satisfying core interaction.
 
 ## Review prompts
 

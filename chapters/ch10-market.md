@@ -1,10 +1,23 @@
 # Chapter 10: Market
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E19, E20, E21
+A design needs a clear experience promise for a particular player, not a feature inventory.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+State the target player, perceived difference, and evidence that the promise matters.
+
+## Game-AI application
+
+Describe AI features by the experience they create, not by model sophistication alone.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

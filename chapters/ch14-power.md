@@ -1,10 +1,23 @@
 # Chapter 14: Power
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E27, E28, E29
+Creative quality improves when intent, ownership, and dissent are distributed clearly.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+State non-negotiable experience constraints and who can make which decisions.
+
+## Game-AI application
+
+Give designers, engineers, and artists enough observability to challenge AI behavior together.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.

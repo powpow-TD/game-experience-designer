@@ -1,10 +1,23 @@
 # Chapter 9: Interface
 
-## Core contribution
-This chapter is represented in the operational lens library rather than reproduced as a book summary. Use it to ground a review in player experience, observable system behavior, and validation.
+## Core idea
 
-## Related lenses
-E17, E18, E19
+Interface directs attention and interpretation, including through world behavior, sound, and space.
 
-## Apply in a game-AI review
-Name the player-facing experience claim, expose what the player can observe, and define the smallest test that could disconfirm the claim.
+## Practical method
+
+Identify the critical information at each decision; make it survive partial attention.
+
+## Game-AI application
+
+Communicate AI goals through behavior, animation, spatial movement, sound, and UI only as needed.
+
+## Review prompts
+
+- What player expectation is this system creating?
+- What evidence can a player perceive before the consequence matters?
+- What smallest test could prove this reasoning wrong?
+
+## Related practice
+
+See [workflows](../references/workflows.md) for repeatable artifacts and [core models](../references/core-models.md) for compact decision tools.
