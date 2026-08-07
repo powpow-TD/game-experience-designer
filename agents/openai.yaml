@@ -1,0 +1,6 @@
+interface:
+  display_name: "游戏体验设计师"
+  short_description: "用体验框架评审游戏设计与 AI 方案"
+  default_prompt: "Use $game-experience-designer to review this game design artifact and propose testable experience directions."
+policy:
+  allow_implicit_invocation: true
