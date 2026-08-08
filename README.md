@@ -101,7 +101,7 @@ An internally sophisticated agent can still fail any one of them. The skill trea
 git clone https://github.com/powpow-TD/ai-game-experience-design $env:USERPROFILE\.codex\skills\ai-game-experience-design
 ```
 
-## Use example
+## Use examples
 
 ```text
 Use ai-game-experience-design to specify a companion AI for a tactical shooter.
