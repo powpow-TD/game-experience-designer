@@ -1,6 +1,6 @@
 # AI Game Experience Design
 
-> Design AI that players can read, influence, trust, and learn from.
+> Design game AI that players can read, influence, trust, and learn from.
 
 `AI Game Experience Design` is a skill for turning game-AI ideas into player-facing behavior specifications, implementation boundaries, operable prototypes, and evidence-based decisions.
 
