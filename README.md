@@ -1,6 +1,10 @@
 # AI Game Experience Design
 
-> A Codex skill for designing game AI that players can understand, respond to, and trust.
+> Design AI that players can read, influence, trust, and learn from.
+
+`AI Game Experience Design` is a Codex skill for turning game-AI ideas into player-facing behavior specifications, implementation boundaries, operable prototypes, and evidence-based decisions.
+
+It is for enemies and bosses, companions and squads, systemic NPCs, LLM characters, adaptive directors, navigation/crowds, AI tooling, and AI playtests.
 
 ## Why it exists
 
