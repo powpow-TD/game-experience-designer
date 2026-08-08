@@ -45,7 +45,7 @@ def main() -> None:
             for item in items:
                 lines.append(f"| {item['id']} | {esc(item['relative_path'])} | {item['readable_text_extracted']} / {item['entry_count']} |")
         lines.append("")
-    args.output.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    args.output.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
