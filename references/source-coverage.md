@@ -14,7 +14,7 @@ This skill is an original operational synthesis. It does not include source text
 
 ## Local full-text coverage
 
-The maintainer's personal installation has a gitignored `private_sources/game-ai-pro/` corpus: complete extracted text for 158 original PDFs (1,816 pages), 13 ZIP audits, readable ZIP-content extracts, and 171 per-resource cards. This is an indexing and traceability layer, not public repository content and not an automatic endorsement of every source claim. The public [resource register](game-ai-pro-resource-register.md) exposes the same coverage, routing, and initial disposition without source content.
+The maintainer's personal installation has a gitignored `private_sources/game-ai-pro/` corpus: complete extracted text for 158 original PDFs (1,816 pages), 13 ZIP audits, readable ZIP-content extracts, and 171 per-resource cards. This is an indexing and traceability layer, not public repository content and not an automatic endorsement of every source claim. The public [resource register](game-ai-pro-resource-register.md) exposes the same coverage and preliminary title-based routing without source content. It is not a substitute for a source-synthesized card.
 
 ## How coverage is used
 

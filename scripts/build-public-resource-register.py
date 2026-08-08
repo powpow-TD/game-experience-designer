@@ -31,13 +31,13 @@ def main() -> None:
         "",
         f"- PDFs: {audit['pdf_count']} | pages: {audit['pdf_pages']} | full-text extraction: {audit['pdf_full_text_extraction']}",
         f"- ZIP resources: {audit['zip_count']}",
-        "- Default evidence state: source-indexed. A register entry is not, by itself, a validated design rule; see [evidence-governance.md](evidence-governance.md).",
+        "- Evidence state for every entry: source-indexed. Route and disposition are preliminary triage only, not a semantic conclusion or a validated design rule; see [evidence-governance.md](evidence-governance.md).",
         "",
     ]
     for name, items in groups.items():
         lines.extend([f"## {name}", ""])
         if name == "PDF resources":
-            lines.extend(["| ID | Resource | Route | Initial disposition |", "|---|---|---|---|"])
+            lines.extend(["| ID | Resource | Candidate route | Preliminary handling |", "|---|---|---|---|"])
             for item in items:
                 lines.append(f"| {item['id']} | {esc(item['title'])} | `{item['skill_route']}` | `{item['integration_status']}` |")
         else:
