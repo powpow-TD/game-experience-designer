@@ -82,6 +82,15 @@ An internally sophisticated agent can still fail any one of them. The skill trea
 - [Operability and Validation](references/operability-and-validation.md): replay, assertions, simulation, telemetry, and player-model tests.
 - [Scope and Modernization](references/scope-and-modernization.md): what to retain, treat as historical, or exclude.
 - [Source Coverage](references/source-coverage.md): source families and copyright boundary.
+- [Game AI Pro Resource Register](references/game-ai-pro-resource-register.md): all 171 indexed local resources, public-safe routing, and initial disposition.
+- [Evidence Governance](references/evidence-governance.md): source-card states and expiry rules.
+- [Current Platform Integration](references/current-platform-integration.md): Unity 6, Unreal 5.8, and LLM-boundary notes.
+
+## Evidence-ready local installation
+
+The maintainer's local installation also has a gitignored, private research layer with full text from 158 Game AI Pro PDFs, ZIP audits, and 171 source cards. It is intentionally not in this public repository. The skill distinguishes a locally indexed source from a source-synthesized or project-validated rule, so a citation never becomes a false guarantee.
+
+Reusable working templates are in [`templates/`](templates/): source card, AI ADR, behavior-to-experience spec, telemetry schema, and greybox player-model test.
 
 ## Examples
 

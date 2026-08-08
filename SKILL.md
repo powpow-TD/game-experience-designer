@@ -60,6 +60,19 @@ Separate what happened (trace), what the player understood (explanation), what t
 - **Architecture or algorithm choice**: `playbooks/ai-implementation-choice.md`
 - **Testing, debugging, simulation, autoplay, or telemetry**: `references/operability-and-validation.md`
 - **Outdated techniques, source scope, or provenance**: `references/scope-and-modernization.md` and `references/source-coverage.md`
+- **Evidence status, source cards, or decision confidence**: `references/evidence-governance.md`
+- **Unity, Unreal, or LLM implementation boundary**: `references/current-platform-integration.md`
+
+## Use the private source corpus when installed
+
+This personal installation includes `private_sources/game-ai-pro/`: full text, 171 resource cards, and ZIP-content extracts from the local Game AI Pro collection. It is intentionally excluded from Git.
+
+- Read `private_sources/game-ai-pro/resource_audit.json` to locate a specific PDF or ZIP.
+- Read its matching `cards/pdf-*.md` or `cards/zip-*.md` before using it as evidence.
+- Search `private_sources/game-ai-pro/full_text.txt` for a named technique, case study, or exact term; use `scripts/query-private-game-ai-pro.py` for repeatable lookup.
+- Never copy private source passages, code, figures, or OCR into a public output. Synthesize and cite the official source instead.
+
+If the private corpus is absent, state that source-specific claims need verification rather than inventing a citation.
 
 ## Required outputs
 
@@ -95,3 +108,4 @@ Separate what happened (trace), what the player understood (explanation), what t
 - Keep claims, memory, and world actions within executable authority.
 - Do not secretly invalidate earned outcomes through adaptation or retention optimization.
 - Do not publish source text, scans, OCR, figures, or code from cited books. Use original synthesis and link to official sources.
+- Label every decision rule with an evidence status: `hypothesis`, `source-indexed`, `source-synthesized`, `project-validated`, or `superseded`.
