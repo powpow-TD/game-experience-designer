@@ -4,7 +4,7 @@
 
 `AI Game Experience Design` is a skill for turning game-AI ideas into player-facing behavior specifications, implementation boundaries, operable prototypes, and evidence-based decisions.
 
-It is for enemies and bosses, companions and squads, systemic NPCs, LLM characters, adaptive directors, navigation/crowds, AI tooling, and AI playtests.
+It is for enemies and bosses, companions and squads, systemic NPCs, LLM characters, adaptive directors, navigation/crowds, AI tooling, and AI playtests etc.
 
 ## Why it exists
 
